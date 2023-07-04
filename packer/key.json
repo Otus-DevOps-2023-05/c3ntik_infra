@@ -3,6 +3,6 @@
    "service_account_id": "ajeqi3ga7dogdvd410dk",
    "created_at": "2023-07-03T09:50:41.188745174Z",
    "key_algorithm": "RSA_2048",
-   "public_key": "-----BEGIN PUBLIC KEY-----\n
-   "private_key": "-----BEGIN PRIVATE KEY-----\n
+   "public_key": "-----BEGIN PUBLIC KEY-----\n-----END PUBLIC KEY-----\n",
+   "private_key": "-----BEGIN PRIVATE KEY-----\n-----END PRIVATE KEY-----\n"
 }
