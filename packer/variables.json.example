@@ -1,5 +1,4 @@
 {
-    "service_account_key_file": "{{user `files/key.json`}}",
     "folder_id": "b1gi8rea67r233k0ht22",
     "subnet_id": "e9bliv6sqtuf7647rn22",
     "zone": "ru-central1-a",
