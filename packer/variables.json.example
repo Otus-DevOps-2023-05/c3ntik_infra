@@ -1,0 +1,7 @@
+{
+"SERVICE_ACCOUNT_KEY_FILE" : "key.json",
+"FOLDER_ID": "my-folder-id",
+"SUBNET_ID": "my-subnet-id",
+"SSH_USERNAME": "ssh-user",
+"ZONE": "my-zone"
+}

@@ -1,0 +1,29 @@
+{
+    "builders": [
+        {
+            "type": "yandex",
+            "service_account_key_file": "/home/c3nt/.config/yandex-cloud/key.json",
+            "folder_id": "{{user `FOLDER_ID`}}",
+            "source_image_family": "ubuntu-1604-lts",
+            "image_name": "reddit-base-{{timestamp}}",
+            "image_family": "reddit-base",
+	    "subnet_id": "{{user `SUBNET_ID`}}",
+            "ssh_username": "{{user `SSH_USERNAME`}}",
+            "platform_id": "standard-v1",
+	    "use_ipv4_nat": "true",
+	    "zone": "{{user `ZONE`}}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/install_mongodb.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
