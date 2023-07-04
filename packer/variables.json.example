@@ -1,7 +1,9 @@
 {
-"SERVICE_ACCOUNT_KEY_FILE" : "key.json",
-"FOLDER_ID": "my-folder-id",
-"SUBNET_ID": "my-subnet-id",
-"SSH_USERNAME": "ssh-user",
-"ZONE": "my-zone"
+    "service_account_key_file": "{{user `/home/c3nt/.config/yandex-cloud/key.json`}}",
+    "folder_id": "b1gi8rea67r233k0htdp",
+    "subnet_id": "e9bliv6sqtuf7647rnrv",
+    "zone": "ru-central1-a",
+    "source_image_family": "ubuntu-1604-lts",
+    "disk_size_gb": "10",
+    "SSH_USERNAME": "otus"
 }
