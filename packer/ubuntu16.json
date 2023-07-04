@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "/home/c3nt/.config/yandex-cloud/key.json",
+            "service_account_key_file": "{{user `service_account_key_file`}}",
             "folder_id": "{{user `FOLDER_ID`}}",
             "source_image_family": "ubuntu-1604-lts",
             "image_name": "reddit-base-{{timestamp}}",
