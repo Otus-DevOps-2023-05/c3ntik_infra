@@ -1,0 +1,25 @@
+{
+    "builders": [
+      {
+        "type": "yandex",
+        "service_account_key_file": "/home/c3nt/otus/devops/c3ntik_infra/packer/key.json",
+        "folder_id": "b1gi8rea67r233k0htdp",
+        "subnet_id": "e9bliv6sqtuf7647rnrv",
+        "zone": "{{user `zone`}}",
+        "source_image_family": "ubuntu-1604-lts",
+        "use_ipv4_nat": "true",
+        "image_name": "reddit-app-{{timestamp}}",
+        "image_family": "reddit-app",
+        "disk_size_gb": "10",
+        "ssh_username": "ubuntu",
+        "platform_id": "standard-v1"
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "shell",
+        "script": "scripts/install_ruby.sh",
+        "execute_command": "sudo {{.Path}}"
+      }
+    ]
+  }
